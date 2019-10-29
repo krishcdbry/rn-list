@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.appContainer}>
-        <Home />
+        <Home/>
       </View>
     );
   }
