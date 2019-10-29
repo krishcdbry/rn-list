@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, View, Text, StyleSheet} from 'react-native';
 
-const Header = ({ onBack, title }) => (
+const Header = ({ title }) => (
   <SafeAreaView style={styles.headerContainer}>
     <View style={styles.header}>
       <View style={styles.headerCenter}>

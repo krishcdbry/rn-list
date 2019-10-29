@@ -11,7 +11,8 @@ class Home extends React.Component {
     };
 
     async getUsers() {
-        const res = await fetch('https://randomuser.me/api/?results=20');
+        const API = 'https://randomuser.me/api/?results=20';
+        const res = await fetch(API);
         const {results} = await res.json();
         this.setState({
             users : results.slice(0),
@@ -27,9 +28,10 @@ class Home extends React.Component {
         let {users, loading} = this.state;
         let scrollComponent = (
             <ActivityIndicator
-                        style={[styles.centering, styles.gray]}
-                        size="large"
-                        color="#22a0ce"></ActivityIndicator>
+                style={[styles.centering, styles.gray]}
+                size="large"
+                color="#22a0ce">
+            </ActivityIndicator>
         )
 
         if (!loading) {
@@ -41,9 +43,7 @@ class Home extends React.Component {
                 noSpacer={true}
                 noScroll={true}
                 style={styles.container}>
-
                 {scrollComponent}
-
             </ScrollView>
         )
     }
