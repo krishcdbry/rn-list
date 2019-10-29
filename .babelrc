@@ -1,0 +1,18 @@
+{
+    "presets": ["babel-preset-expo", "module:react-native"],
+    "env": {
+      "development": {
+        "plugins": ["transform-object-rest-spread", "transform-react-jsx-source", "@babel/plugin-proposal-object-rest-spread"]
+      }
+    },
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "alias": {
+            "^react-native$": "react-native-web"
+          }
+        }
+      ]
+    ]
+  }

@@ -1,0 +1,14 @@
+{
+    "expo": {
+      "sdkVersion": "34.0.0",
+      "name": "rn-list",
+      "slug": "rn-list",
+      "version": "0.1.0",
+      "description": "An application for displaying random people",
+      "primaryColor": "#ff8179",
+      "android": {
+        "package": "rn.list"
+      }
+    }
+  }
+  
