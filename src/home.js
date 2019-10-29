@@ -43,9 +43,7 @@ class Home extends React.Component {
                 noSpacer={true}
                 noScroll={true}
                 style={styles.container}>
-
                 {scrollComponent}
-
             </ScrollView>
         )
     }
