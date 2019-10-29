@@ -28,9 +28,10 @@ class Home extends React.Component {
         let {users, loading} = this.state;
         let scrollComponent = (
             <ActivityIndicator
-                        style={[styles.centering, styles.gray]}
-                        size="large"
-                        color="#22a0ce"></ActivityIndicator>
+                style={[styles.centering, styles.gray]}
+                size="large"
+                color="#22a0ce">
+            </ActivityIndicator>
         )
 
         if (!loading) {
